@@ -10,7 +10,7 @@ pg client auth:
 pg remote listen:
   file.append:
     - name: /etc/postgresql/9.3/main/postgresql.conf
-    - text: "listen_addresses = '192.168.69.20'"
+    - text: "listen_addresses = '192.168.69.10'"
 
 pg service:
   service.running:

@@ -3,6 +3,6 @@ rails db migrate:
     - name: bundle exec rake db:migrate
     - cwd: /vagrant
     - env:
-      - DB_HOST: 192.168.69.20
+      - DB_HOST: 192.168.69.10
     - watch:
       - cmd: bundle install

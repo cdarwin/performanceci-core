@@ -4,9 +4,9 @@ resque worker service:
     - cwd: /vagrant
     - unless: pgrep -fa resque
     - env:
-      - DB_HOST: 192.168.69.20
-      - REDIS_HOST: 192.168.69.20
-      - SERVER_HOST: 192.168.69.30
+      - DB_HOST: 192.168.69.10
+      - REDIS_HOST: 192.168.69.10
+      - SERVER_HOST: 192.168.69.10
       - DOCKER_URL: 'unix:///run/docker.sock'
       - RAILS_ENV: development
       - QUEUE: docker

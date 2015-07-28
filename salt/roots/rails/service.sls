@@ -4,9 +4,9 @@ rails server:
     - cwd: /vagrant
     - unless: pgrep -fa rails
     - env:
-      - DB_HOST: 192.168.69.20
-      - REDIS_HOST: 192.168.69.20
-      - SERVER_HOST: 192.168.69.30
+      - DB_HOST: 192.168.69.10
+      - REDIS_HOST: 192.168.69.10
+      - SERVER_HOST: 192.168.69.10
       - RAILS_ENV: development
       - GITHUB_ID: {{salt['pillar.get']('rails:github:id', '')}}
       - GITHUB_SECRET: {{salt['pillar.get']('rails:github:secret', '')}}

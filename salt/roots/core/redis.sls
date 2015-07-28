@@ -6,7 +6,7 @@ redis remote listen:
   file.replace:
     - name: /etc/redis/redis.conf
     - pattern: 'bind 127.0.0.1'
-    - repl: 'bind 192.168.69.20'
+    - repl: 'bind 192.168.69.10'
 
 redis service:
   service.running:
